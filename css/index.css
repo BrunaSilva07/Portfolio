@@ -232,6 +232,12 @@ body .rodape-pagina em {
         color: #F2FFFC;
         padding: 1.5rem;
     }
+    
+    body .rodape-pagina {
+        padding: .5rem;
+        font-size: 1;
+        height: 6rem;
+    }
 }
 @media (max-width: 375px) {
 
@@ -239,6 +245,11 @@ body .rodape-pagina em {
         width: 100%;
         padding-bottom: 4rem;
         position: relative;
+    }
+
+    body main .titulo-principal {
+        font-size: 2.5rem;
+        padding: 1.5rem;
     }
 
     body .minha-foto,
@@ -249,18 +260,18 @@ body .rodape-pagina em {
 
     body main .container {
         position: absolute;
-        top: 30rem;
+        top: 20rem;
         margin-left: 3rem;
         margin-right: auto;
         padding: 1.5em 0;
-        margin-bottom: 10rem;
+        margin-bottom: 6rem;
     }
 
     body .minha-foto {
         position: absolute;
-        top: 20.2rem;
+        top: 10.9rem;
         right: 50%;
-        height: 12rem;
+        height: 10rem;
         width: 50%;
     }
 
@@ -268,12 +279,22 @@ body .rodape-pagina em {
         width: 50%;
         left: 50%;
         right: 0;
-        top: 20.2rem;
-        height: 12rem;
+        top: 10.9rem;
+        height: 10rem;
         position: absolute;
         text-align: center;
         background-color: #3C1D3D;
         color: #F2FFFC;
         padding: 1.5rem;
+    }
+    body .navegacao-site h1 {
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+    }
+
+    body .rodape-pagina {
+        padding: .5rem;
+        font-size: 1;
+        height: 6rem;
     }
 }
