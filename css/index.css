@@ -5,24 +5,16 @@ body {
     line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-.subtitulo-principal {
+body main {
+    width: 80%;
+    float: left;
+    padding-bottom: 4rem;
+}
+
+body main .titulo-principal {
     font-family: "Open Sans Condensed", "Arial", sans-serif;
-}
-
-h1 {
     text-transform: uppercase;
-    font-size: 3em;
-}
-
-h3 {
-    margin-top: 1em;
-}
-
-.titulo-principal {
+    font-size: 3.5rem;
     text-align: center;
     background-color: #851944;
     color: #FFF;
@@ -30,49 +22,127 @@ h3 {
     border-bottom: .5rem solid #000;
 }
 
-.subtitulo-texto {
-    font-size: 1.5em;
+body main .container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em 0;
+    margin-bottom: 4rem;
+}
+
+body main .container .subtitulo-texto,
+h3,
+h4 {
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+}
+
+body main .container .subtitulo-texto {
+    font-size: 2rem;
     clear: both;
 }
 
-main a {
+body main .container h3 {
+    margin-top: 1.5rem;
+}
+
+body main .container p {
+    text-align: justify;
+    margin: 1.5rem 0;
+}
+
+body main .container strong {
+    font-weight: bold;
+}
+
+body main .container em {
+    font-style: italic;
+}
+
+body main .container ul {
+    margin: 1.5rem 0;
+}
+
+body main .container li .seta-direita:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: .07rem;
+    width: 0; 
+    height: 0; 
+    
+    border-top: .4rem solid transparent;
+    border-bottom: .4rem solid transparent;
+    border-left: .4rem solid rgb(8, 8, 8);
+}
+
+body main .container a {
     font-style: italic;
     font-weight: bold;
     color: #070608;
     text-decoration: none;
 }
 
-main p {
-    text-align: justify;
-    margin: 1em 0;
+body .minha-foto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 18.1rem;
+    width: 18.1rem;
 }
 
-main ul {
-    margin: 1em 0;
-}
-
+body .minha-foto,
 .navegacao-site {
+    border-left: .5rem solid black;
+    border-bottom: .5rem solid black;
+    box-sizing: border-box;
+}
+
+body .navegacao-site {
+    width: 20%;
+    float: right;
+    position: relative;
+    top: 18.1rem;
     text-align: center;
     background-color: #3C1D3D;
     color: #F2FFFC;
-    padding: 1em;
+    padding: 1.5rem;
 }
 
-.navegacao-site a {
+body .navegacao-site h1 {
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+body .navegacao-site a {
     color: inherit;
     font-family: "Open Sans Condensed", "Arial", sans-serif;
     text-transform: lowercase;
 }
 
-.navegacao-site h1 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
+body .navegacao-site .icones-redes-sociais li {
+    display: inline-block;
 }
 
-.rodape-pagina {
+body .navegacao-site .icones-redes-sociais a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
+}
+
+body .navegacao-site .icones-redes-sociais .github {
+    background-image: url(../img/github.png);
+}
+
+body .navegacao-site .icones-redes-sociais .linkedin {
+    background-image: url(../img/linkedin.png);
+}
+
+body .rodape-pagina {
     background-color: #000;
     color: #F2FFFC;
-    padding: 1em;
+    padding: 1.5rem;
     clear: both;
     position: fixed;
     bottom: 0;
@@ -81,69 +151,129 @@ main ul {
     box-sizing: border-box;
 }
 
-.container {
-    width: 80ch;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em 0;
-    margin-bottom: 50px;
-}
-
-strong {
-    font-weight: bold;
-}
-
-em {
-    font-style: italic;
-}
-
-.icones-redes-sociais li {
-    display: inline-block;
-}
-
-.icones-redes-sociais a {
-    width: 40px;
-    height: 40px;
-    display: block;
-    text-indent: -99999px;
-}
-
-.github {
-    background-image: url(../img/github.png);
-}
-
-.linkedin {
-    background-image: url(../img/linkedin.png);
-}
-
-main {
-    width: 80%;
-    float: left;
-    padding-bottom: 4em;
-}
-
-.minha-foto,
-.navegacao-site {
-    border-left: .5em solid black;
-    border-bottom: .5em solid black;
-    box-sizing: border-box;
-}
-
-.navegacao-site {
-    width: 20%;
-    float: right;
-    position: relative;
-    top: 290px;
-}
-
-.minha-foto {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 290px;
-    width: 290px;
-}
-
-footer em {
+body .rodape-pagina em {
     color: aqua;
+}
+
+@media (max-width: 768px) {
+
+    body main {
+        width: 100%;
+        padding-bottom: 4rem;
+        position: relative;
+    }
+
+    body main .container {
+        margin-left: 2rem;
+        margin-right: auto;
+        padding: 1.5em 0;
+    }
+
+    body .minha-foto {
+        position: absolute;
+        top: 9.7rem;
+        right: 0;
+        height: 12rem;
+        width: 12rem;
+    }
+
+    body .navegacao-site {
+        width: 10rem;
+        left: 80%;
+        right: 0;
+        position: absolute;
+        top: 21.7rem;
+        text-align: center;
+        background-color: #3C1D3D;
+        color: #F2FFFC;
+        padding: 1.5rem;
+    }
+}
+@media (max-width: 414px) {
+
+    body main {
+        width: 100%;
+        padding-bottom: 4rem;
+        position: relative;
+    }
+
+    body .minha-foto,
+    .navegacao-site {        
+        border-right:.5rem solid black;
+        box-sizing: border-box;
+    }
+
+    body main .container {
+        position: absolute;
+        top: 27rem;
+        margin-left: 3rem;
+        margin-right: auto;
+        padding: 1.5em 0;
+        margin-bottom: 8rem;
+    }
+
+    body .minha-foto {
+        position: absolute;
+        top: 15rem;
+        right: 50%;
+        height: 12rem;
+        width: 50%;
+    }
+
+    body .navegacao-site {
+        width: 50%;
+        left: 50%;
+        right: 0;
+        top: 15rem;
+        height: 12rem;
+        position: absolute;
+        text-align: center;
+        background-color: #3C1D3D;
+        color: #F2FFFC;
+        padding: 1.5rem;
+    }
+}
+@media (max-width: 375px) {
+
+    body main {
+        width: 100%;
+        padding-bottom: 4rem;
+        position: relative;
+    }
+
+    body .minha-foto,
+    .navegacao-site {        
+        border-right:.5rem solid black;
+        box-sizing: border-box;
+    }
+
+    body main .container {
+        position: absolute;
+        top: 30rem;
+        margin-left: 3rem;
+        margin-right: auto;
+        padding: 1.5em 0;
+        margin-bottom: 10rem;
+    }
+
+    body .minha-foto {
+        position: absolute;
+        top: 20.2rem;
+        right: 50%;
+        height: 12rem;
+        width: 50%;
+    }
+
+    body .navegacao-site {
+        width: 50%;
+        left: 50%;
+        right: 0;
+        top: 20.2rem;
+        height: 12rem;
+        position: absolute;
+        text-align: center;
+        background-color: #3C1D3D;
+        color: #F2FFFC;
+        padding: 1.5rem;
+    }
 }
